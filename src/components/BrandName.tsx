@@ -146,7 +146,7 @@ import search_vector from "@/assets/Vector (44).svg"
 export default function BrandName() {
 
   return (
-          <div className='h-12 top-[62px] flex justify-between items-center mx-auto max- w-full  sm:mt-6 left-[100px] gap-10px lg:w -[1240px] lg:m x-auto lg:max -w-full '>
+          <div className='h-12 top-[62px] flex justify-between mt-12 items-center mx-auto max- w-[100%] overflow-hidden  sm:mt-6 left-[100px] gap-10px lg:w -[1240px] lg:m x-auto lg:max -w-full '>
           <div className='md:hidden w-6 h-6 y-[4.88px] px-[2.63px] absolute top-[54px] left-4 '>
             <Image src={Menu} alt="Menu Bar" />
           </div>
