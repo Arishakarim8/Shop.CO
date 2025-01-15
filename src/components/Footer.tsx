@@ -153,7 +153,7 @@ export default function Footer(){
 //         </div>
 //       </div>
 
-      <div className=" relativ">
+      <div className=" ">
       <div className="sm:w-full sm:h-[589px] h-[981px] sm:left-[-1px]">
         <div className="md:w-[1350px] md:h-[499px] top-[150px] left-[-1px] md:top-[90px]  absolute bg-[#f0f0f0] w-[392px] h-[846px] ">
           </div>
@@ -179,7 +179,6 @@ export default function Footer(){
               <Image src={Gpay} alt="" />
             </div>
           </div>
-
 
 
             <div className="w-[1240px] absolute md:top-[230px] top-[320px] md:h-[177px]  md:flex md:justify-between md:left-[70px] left-4"> 

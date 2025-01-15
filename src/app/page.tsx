@@ -12,10 +12,10 @@ export default function Hone(){
       <Hero />
       <NewArrivals />
       <TopSelling /> 
-      <Reviews />
-      <div className="top-[3480px] absolute md:top-[3781px]">
+      {/* <Reviews /> */}
+      {/* <div className="top-[3480px] absolute md:top-[3781px]">
         <Footer />
-      </div>
+      </div> */}
     </div>
   )
 }

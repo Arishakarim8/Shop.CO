@@ -53,34 +53,37 @@ export default function Cart(){
         </div>
 
 
+            <div className="w-full h-auto absolute gap-4 flex flex-col md:flex-row top-[157px] md:top-[216px]">
 
-            <div >
-                <Image
-                 src={Main_shirt} 
-                 alt="" 
-                 className=" absolute rounded-[20px] hidden md:flex w-[358px] h-[290px] md:w-[444px]  md:h-[530px]  top-[157px] left-[16px] md:top-[216px] md:left-[266px]"
-                 />
-
-                <Image
-                 src={MAIN_SHIRT} 
-                 alt="" 
-                 className=" absolute rounded-[20px] flex md:hidden w-[358px] h-[290px] md:w-[444px]  md:h-[530px]  top-[157px] left-[16px] md:top-[216px] md:left-[266px]"
-                 />
-            </div>
+            <div className="md:w-1/2 h-auto full auto gap-3  flex flex-col lg:flex-row absolut justify-center md:justify-normal  top-[157px] md:top-[216px]" >
+                 <div className="w-full h-[40vw] lg:w-[35vw] lg:h-[35vw] flex justify-center lg:relative lg:left-[13vw] [136px] md:justify-normal">
+                     <Image
+                      src={MAIN_SHIRT} 
+                      alt="" 
+                      className=" absolut rounded-[20px] flex  object-cover w-full h-full auto [330px] sm:w-1/2 md:w-full top-[157px] left-[16px] md:top-[216px] md:left-[266px]"
+                      />
+                 </div>
+                 <div className="w-full flex justify-center lg:absolute lg:left-[16px] lg:w-1/2 lg:justify-normal">
+                    <div className="md:top- [216px] absolut top- [459px] justify-between gap-2 lg:h-[35vw] flex lg:flex-col md:left-[100px] left-[16px]">        
+                         <Image src={shirt_front} alt="" className="w-[111px] h-[106px] lg:w-[10vw] lg:h-[10vw]" />
+                         <Image src={shirt_back} alt="" className="w-[111px] h-[106px] lg:w-[10vw] lg:h-[10vw]" />
+                         <Image src={shirt_full} alt="" className="w-[111px] h-[106px] lg:w-[10vw] lg:h-[10vw]" />
+                    </div>
+                   </div>
+                </div>
             
-            <div className="md:top-[216px] absolute top-[459px] justify-between md:h-[530px] w-[358px] flex md:flex-col md:left-[100px] left-[16px]">
+            {/* // <div className="md:top-[216px] absolute top-[459px] justify-between md:h-[530px] w-[358px] flex md:flex-col md:left-[100px] left-[16px]">
          
-            <Image src={shirt_front} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
-            <Image src={shirt_back} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
-            <Image src={shirt_full} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
-            </div>
-            
-            
-             <h1 className="font-bold text-[24px] md:w-[550px] md:h-12 w-[267px] h-[56px] absolute pr-10 md:pr-0  leading-[28px] md:text-[40px] md:leading-[48px] md:left-[750px] left-[16px] md:top-[216px] top-[585px] text-black " >
+            // <Image src={shirt_front} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
+            // <Image src={shirt_back} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
+            // <Image src={shirt_full} alt="" className="w-[111px] h-[106px] md:w-[152px] md:h-[167px]" />
+            // </div> */}
+            <div className="md:w-1/2 4/12 md:left-1/2 md:h-auto gap-4 absolut flex flex-col justify-between ml- md:top -[216px] top -[585px]">
+            <h1 className="font-black text-[24px]  pr-10 md:pr-0  leading-[28px] md:text-[48px] md:leading-[40px] md:left -[750px] l text-black " >
                 ONE LIFE GRAPHIC T-SHIRT
              </h1>
 
-        <div className="top-[653px] absolute  md:w-[193px] md:top-[278px] left-4 md:left-[750px] " >
+             <div className="top -[653px] absolut  md:w -[193px] md:top -[278px] left -4 md:left -[750px] " >
           <div className=' flex  gap-[11px] md:mb-3 md:gap-[16px]'>
             <div className='flex gap-[5.31px]'>
               <Image  src={Star} alt={`Star`} className='md:w-[18.49px] md:h-[18.49px] w-[15.47px] h-[15.47px] ' />
@@ -102,9 +105,114 @@ export default function Cart(){
                 -40%
               </div>
         </div>
+            </div>
+
+            <p className="w- [358px] font-normal absolut text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h -[50px] md:w -[590px] md:h -[33px] top -[736px] md:top -[380px] left -[16px] md:left -[750px] ">
+             This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+            </p>
+
+            <div className="w-full border border-BORDER"></div>
+
+            <h1 className=" font-normal absolut text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h- [50px] md:w- [590px] md:h- [33px] top- [824px] md:top- [461px] left -[16px] md:left -[750px] ">
+              Select Colors
+             </h1>
+
+             <div className="w-[142px] h-[39.14px] flex justify-between absolut top-[854px] md:w-[142px]  md:h-[37px] left -[16px] md:top-[488px] md:lef t-[750px]">
+          <div className="w-[37px] h-[37px]  top -[460px] left-[19px] border-[2px] border-[#00000033] bg-[#4F4631] rounded-[50px]">
+            <div className=" items-center justify-center m-[6px] flex py-[3.75px] px-[1.75px] " >
+            <Image src={color_vector} alt="" />
+            </div>
+           </div>
+          <div className="w-[37px] h-[37px] top -[460px] left -[19px] border-[2px] border-[#00000033] bg-[#314F4A] rounded-[50px]">          </div>
+          <div className="w-[37px] h-[37px] top -[460px] left -[19px] border-[2px] border-[#00000033] bg-[#31344F] rounded-[50px]"> </div>
         </div>
 
-        <p className="w-[358px] font-normal absolute text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h-[50px] md:w-[590px] md:h-[33px] top-[736px] md:top-[380px] left-[16px] md:left-[750px] ">
+        <div className="w-full border border-BORDER"></div>
+
+        <h1 className="w- [358px] font-normal absolut text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h- [50px] md:w -[590px] md:h- [33px] top- [947px] md:top -[573px] left -[16px] md:left -[750px] ">
+          Choose Size
+        </h1>
+ 
+        <div className="w-full [353px] h- [39px] gap-2 flex mt -2 justify -evenly between flex-wrap text-nowrap absolut md:w -[420px] md:h- [46px] md:top -[600px] left -[16px] top -[967px] md:gap -4 md:left -[750px] ">
+           <button className="h-[39px] md:h-[46px] py-[10px]  md:py-3 md:px-6  px-5 gap -3 rounded-[62px] bg-[#f0f0f0]">
+             <h1 className="font-normal text-[14px] leading-[18.9px] md:text-[16px]  md:leading-[21.6px] text-[#00000099]">
+             X-Small
+             </h1>
+           </button>
+
+           <button className="h-[39px] md:h-[46px]  py-[10px] md:py-3 md:px-6 px-5 gap -3 rounded-[62px] bg-[#f0f0f0]">
+             <h1 className="font-normal text-[14px] leading-[18.9px] md:text-[16px]  md:leading-[21.6px] text-[#00000099]">
+             Medium
+             </h1>
+           </button>
+
+           <button className="h-[39px] md:h-[46px] py-[10px] md:py-3 md:px-6  px-5 gap -3 rounded-[62px] bg-black">
+             <h1 className="font-normal text-[14px] leading-[18.9px] md:text-[16px]  md:leading-[21.6px] text-[#ffffff]">
+             Large
+             </h1>
+           </button>
+
+           <button className="h-[39px] md:h-[46px] py-[10px] md:py-3 md:px-6  px-5 gap -3 rounded-[62px] bg-[#f0f0f0]">
+             <h1 className="font-normal text-[14px] leading-[18.9px] md:text-[16px]  md:leading-[21.6px] text-[#00000099]">
+             X-Large
+             </h1>
+           </button>
+        </div>
+
+        <div className="w-full border border-BORDER"></div>
+      
+        <div className=" flex">
+        <div className="w-[110px] md:w-[170px] absolut top- [1060px]  md:top -[694px] flex items-center justify-between bg-[#F0F0F0] left- [16px] md: left-[750px] h-[44px] md:h-[52px] py-3 px-4 md:py-4 md:px-5 md:gap-4 gap-5 rounded-[62px]">
+            <button className="w-[15.63px] h-[1.88px] md:w-[18.75px] md:h-[2.25px] bg-black">
+            </button>
+            <h1 className="font-medium  text-[14px] md:text-[16px] md:leading-[21.6px] leading-[18.9px]">
+              1
+            </h1>
+            <button >
+              <Image src={Plus} alt="Increase" className="md:w-[18.75px] w-[15.63px] h-[15.63px] md:h-[18.75px] top-[2.63px] left-[2.63px]" />
+            </button>
+          </div>
+
+        <button className="w-[236px] md:w-[400px] absolut bg-black h-[44px] md:h-[52px] py-4 px-14 gap-3 top- [1060px] md: top-[694px] left -[138px] md:left -[940px] rounded-[62px] ">
+         <h1 className="text-[14px] md:text-[16px] leading-[18.9px] md:leading-[21.6px] font-medium text-white">
+         Add to Cart
+         </h1>
+         </button>
+        </div>
+
+            </div>
+            </div>
+
+            
+             {/* <h1 className="font-bold text-[24px] md:w-[550px] md:h-12 w-[267px] h-[56px] absolute pr-10 md:pr-0  leading-[28px] md:text-[40px] md:leading-[48px] md:left-[750px] left-[16px] md:top-[216px] top-[585px] text-black " >
+                ONE LIFE GRAPHIC T-SHIRT
+             </h1> */}
+
+        {/* <div className="top-[653px] absolute  md:w-[193px] md:top-[278px] left-4 md:left-[750px] " >
+          <div className=' flex  gap-[11px] md:mb-3 md:gap-[16px]'>
+            <div className='flex gap-[5.31px]'>
+              <Image  src={Star} alt={`Star`} className='md:w-[18.49px] md:h-[18.49px] w-[15.47px] h-[15.47px] ' />
+              <Image  src={Star} alt={`Star`} className='md:w-[18.49px] md:h-[18.49px] w-[15.47px] h-[15.47px] ' />
+              <Image  src={Star} alt={`Star`} className='md:w-[18.49px] md:h-[18.49px] w-[15.47px] h-[15.47px] ' />
+              <Image  src={Star} alt={`Star`} className='md:w-[18.49px] md:h-[18.49px] w-[15.47px] h-[15.47px] ' />
+              <Image src={STAR} alt="Half Star" className='md:w-[8.79px] md:h-[16.72px] w-[7.36px] h-[13.99px]' />
+          </div>
+          <div className=' font-normal h-[19px] text-[12px] leading-[16.2px] md:text-[14px] md:leading-[18.9px]'>
+            4.5/5
+          </div>
+        </div>
+        <div className='w-[200px] h-[32px] md:h-[43px] flex gap-[12px]'> 
+              <div className='w-[46px] h-[27px] left-[16px] sm:w-[55px] sm:h-[32px] gap-[10px] sm:left-[100px] text-[24px]  md:text-[32px] leading-[32.4px] md:leading-[43.4px] font-bold'>
+               $260
+              </div>
+              <div className='font-bold md:text-[32px] md:ml-5 ml-2 text-[24px] leading-[32.4px] md:leading-[43.4px] text-[#00000066] line-through'>$300</div>
+              <div className='h-[31px] w-[62px] md:w-[72px] md:left-[938px] mt-1 md:h-[34px] md:py-[6px] py-[6px] px-3 md:px-[14px]  rounded-[62px] bg-[#FF33331A] font-medium md:text-[16px]  text-[14px] md:leading-[21.6px] leading-[18.9px] text-[#FF3333]'>
+                -40%
+              </div>
+        </div>
+        </div> */}
+
+        {/* <p className="w-[358px] font-normal absolute text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h-[50px] md:w-[590px] md:h-[33px] top-[736px] md:top-[380px] left-[16px] md:left-[750px] ">
            This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
         </p>
 
@@ -113,14 +221,12 @@ export default function Cart(){
         <h1 className="w-[358px] font-normal absolute text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h-[50px] md:w-[590px] md:h-[33px] top-[824px] md:top-[461px] left-[16px] md:left-[750px] ">
            Select Colors
         </h1>
-
-        <div className="w-[142px] h-[39.14px] flex justify-between absolute top-[854px] md:w-[142px]  md:h-[37px] left-[16px] md:top-[488px] md:left-[750px]">
+ */}
+        {/* <div className="w-[142px] h-[39.14px] flex justify-between absolute top-[854px] md:w-[142px]  md:h-[37px] left-[16px] md:top-[488px] md:left-[750px]">
           <div className="w-[37px] h-[37px]  top -[460px] left-[19px] border-[2px] border-[#00000033] bg-[#4F4631] rounded-[50px]">
-            {/* <div className="items-center justify-center m-[6px] flex "> */}
             <div className=" items-center justify-center m-[6px] flex py-[3.75px] px-[1.75px] " >
             <Image src={color_vector} alt="" />
             </div>
-            {/* </div> */}
            </div>
           <div className="w-[37px] h-[37px] top -[460px] left -[19px] border-[2px] border-[#00000033] bg-[#314F4A] rounded-[50px]">          </div>
           <div className="w-[37px] h-[37px] top -[460px] left -[19px] border-[2px] border-[#00000033] bg-[#31344F] rounded-[50px]"> </div>
@@ -130,9 +236,9 @@ export default function Cart(){
 
         <h1 className="w-[358px] font-normal absolute text-sm md:text-[16px] md:leading-[22px] text-[#00000099] h-[50px] md:w-[590px] md:h-[33px] top-[947px] md:top-[573px] left-[16px] md:left-[750px] ">
           Choose Size
-        </h1>
+        </h1> */}
  
-        <div className="w-[353px] h-[39px] gap-2 flex mt-2 justify-between text-nowrap absolute md:w-[420px] md:h-[46px] md:top-[600px] left-[16px] top-[967px] md:gap-4 md:left-[750px] ">
+        {/* <div className="w-[353px] h-[39px] gap-2 flex mt-2 justify-between text-nowrap absolute md:w-[420px] md:h-[46px] md:top-[600px] left-[16px] top-[967px] md:gap-4 md:left-[750px] ">
            <button className="h-[39px] md:h-[46px] py-[10px]  md:py-3 md:px-6  px-5 gap-3 rounded-[62px] bg-[#f0f0f0]">
              <h1 className="font-normal text-[14px] leading-[18.9px] md:text-[16px]  md:leading-[21.6px] text-[#00000099]">
              X-Small
@@ -156,9 +262,9 @@ export default function Cart(){
              X-Large
              </h1>
            </button>
-        </div>
+        </div> */}
 
-        <div className="w-[353px] md:w-[590px] absolute top-[1036px] md:top-[670px] left-[16px] md:left-[750px] border border-BORDER"></div>
+        {/* <div className="w-[353px] md:w-[590px] absolute top-[1036px] md:top-[670px] left-[16px] md:left-[750px] border border-BORDER"></div>
       
         <button className="w-[236px] md:w-[400px] absolute bg-black h-[44px] md:h-[52px] py-4 px-14 gap-3 top-[1060px] md:top-[694px] left-[138px] md:left-[940px] rounded-[62px] ">
          <h1 className="text-[14px] md:text-[16px] leading-[18.9px] md:leading-[21.6px] font-medium text-white">
@@ -177,10 +283,10 @@ export default function Cart(){
             <button >
               <Image src={Plus} alt="Increase" className="md:w-[18.75px] w-[15.63px] h-[15.63px] md:h-[18.75px] top-[2.63px] left-[2.63px]" />
             </button>
-          </div>
+          </div> */}
 
 
-           <div className="w-[358px] flex md:justify-around justify-between md:w-[1240px] absolute top-[1154px] left-[16px] md:left-[56px] md:top-[826px]  text-[16px] md:text-[20px] md:leading-[22px]">
+           {/* <div className="w-[358px] flex md:justify-around justify-between md:w-[1240px] absolute top-[1154px] left-[16px] md:left-[56px] md:top-[826px]  text-[16px] md:text-[20px] md:leading-[22px]">
              <h1 className="text-[#00000099] font-normal">
                 Product Details
              </h1>
@@ -225,7 +331,7 @@ export default function Cart(){
                </h1>
               </button>
 
-          </div>
+          </div> */}
 
           {/* <div className="w-[358px] h-[224.19px] absolute  border-[#0000001A] top-[1266px] left-[16px] p-[24px] md:w-[610px] md:h-[241px] md:top-[960px] md:left-[56px] sm:py-[28px]  sm:px-[32px] gap-[342px] rounded-[20px] border-[1px]">
               <div className=" flex justify-between">
@@ -258,7 +364,7 @@ export default function Cart(){
                   </p>
 
            </div> */}
-           <div className="grid absolute mx-auto top-[1266px]  left-[16px]  md:left-[56px] grid-cols-1 md:top-[960px] sm:grid-cols-1  md:grid-cols-2  gap-6">
+           {/* <div className="grid absolute mx-auto top-[1266px]  left-[16px]  md:left-[56px] grid-cols-1 md:top-[960px] sm:grid-cols-1  md:grid-cols-2  gap-6">
  
 <ReviewCard
   rating={4.5}
@@ -365,6 +471,6 @@ export default function Cart(){
 </div>
       <div className="md:top-[2477px] top-[2572px] absolute">
         <Footer />
-      </div>
+      </div> */}
      </div>
 }

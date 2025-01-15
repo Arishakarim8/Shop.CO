@@ -80,7 +80,7 @@ export default function Filter(){
           <div className="w-[37px] h-[37px]  top-[460px] left-[19px] border-[2px] border-[#00000033] bg-[#F57906] rounded-[50px]"> </div>
           <div className="w-[37px] h-[37px]  top-[460px] left-[19px] border-[2px] border-[#00000033] bg-[#06CAF5] rounded-[50px]"> </div>
           <div className="w-[37px] h-[37px]  top-[460px] left-[19px] border-[2px] border-[#00000033] bg-[#063AF5] rounded-[50px]">
-            <div className=" flex top-[470px] left-[292px] py5-[3.75px] px-[1.75px] justify-center" >
+            <div className=" items-center justify-center m-[6px] flex py-[3.75px] px-[1.75px] " >
             <Image src={color_vector} alt="" />
             </div>
            </div>
