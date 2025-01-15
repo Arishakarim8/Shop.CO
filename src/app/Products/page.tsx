@@ -52,7 +52,7 @@ const Pr: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, o
     return (
      
       <div className=' w-[40vw] h-[40vw] sm:w-[30vw] mb-28  sm:h-[30vw]  lg: mr- 5 rounded-[13.42px] md:w-[30vw] md:h-[30vw] lg:w-[22vw] lg:h-[22vw] absolut md:rounded-[20px]  bg-[#F0EEED]'>
-        <Image src={image} alt={title} className="  w-[40vw] h-[40vw] sm:w-[30vw] sm:h-[30vw]  md:w-[30vw] md:h-[30vw] lg:w-[22vw] lg:h-[22vw] "/>
+        <Image src={image} alt={title} className="  w-[50vw] h-[50vw] sm:w-[30vw] sm:h-[30vw]  md:w-[30vw] md:h-[30vw] lg:w-[22vw] lg:h-[22vw] "/>
       
         <div className=' my-2 whitespace-nowrap font-bold text-[16px] leading-[21.6px] md:text-[20px] md:leading-[27px] '>
           {title}
