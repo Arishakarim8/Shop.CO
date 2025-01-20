@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar"
-import BrandName from "@/components/BrandName"
+import BrandName from "@/components/Header"
 import Link from "next/link"
 import Image from "next/image"
 import arrow from "@/assets/Vector (40).svg"
@@ -16,16 +16,16 @@ import Review_Vector from "@/assets/Vector (5).svg"
 import Dots from "@/assets/Vector (31).svg"
 import Filteration from "@/assets/Frame 19.svg"
 import Shop from '@/assets/Vector (2).svg'
-import ReviewCard from "../Review_Cards/page"
+import ReviewCard from "@/components/reviewCard2"
 import Pr from "../Products/page"
 import Multi_shirt from "@/assets/Frame 33 (2).svg"
 import Polo_Shirt from "@/assets/Frame 34 (1).svg"
 import Black_Striped from "@/assets/Frame 38 (1).svg"
 import Polo_TShirt from "@/assets/Frame 32 (1).svg"
-import Footer from "@/components/Footer"
+import Footer from "../Footer/page"
 export default function Cart(){
 
-    return <div className=" relativ">
+    return <div className=" flex flex-col  ">
         <div className="md:w-[259px] flex md:h-[22px] w-[89px] h-[19px] absolute top-[118px] md:top-[158px] left-[16px] md:left-[56px] gap-[6px] md:gap-3">
              <Link href="/" className="md:text-[16px] text-[14px] leading-[18.9px] gap-1 md:leading-[21.6px] font-normal text-[#00000099]">
              Home
@@ -56,7 +56,7 @@ export default function Cart(){
             <div className="w-full h-auto absolute gap-4 flex flex-col md:flex-row top-[157px] md:top-[216px]">
 
             <div className="md:w-1/2 h-auto full auto gap-3  flex flex-col lg:flex-row absolut justify-center md:justify-normal  top-[157px] md:top-[216px]" >
-                 <div className="w-full h-[40vw] lg:w-[35vw] lg:h-[35vw] flex justify-center lg:relative lg:left-[13vw] [136px] md:justify-normal">
+                 <div className="w-full h-full  [40vw] lg:w-[35vw] lg:h-[35vw] flex justify-center lg:relative lg:left-[13vw] [136px] md:justify-normal">
                      <Image
                       src={MAIN_SHIRT} 
                       alt="" 
@@ -158,10 +158,10 @@ export default function Cart(){
              </h1>
            </button>
         </div>
-
+        
         <div className="w-full border border-BORDER"></div>
       
-        <div className=" flex">
+        <div className=" flex gap-3">
         <div className="w-[110px] md:w-[170px] absolut top- [1060px]  md:top -[694px] flex items-center justify-between bg-[#F0F0F0] left- [16px] md: left-[750px] h-[44px] md:h-[52px] py-3 px-4 md:py-4 md:px-5 md:gap-4 gap-5 rounded-[62px]">
             <button className="w-[15.63px] h-[1.88px] md:w-[18.75px] md:h-[2.25px] bg-black">
             </button>
@@ -173,15 +173,237 @@ export default function Cart(){
             </button>
           </div>
 
-        <button className="w-[236px] md:w-[400px] absolut bg-black h-[44px] md:h-[52px] py-4 px-14 gap-3 top- [1060px] md: top-[694px] left -[138px] md:left -[940px] rounded-[62px] ">
+        <button className="max- w-[550px] absolut bg-black h-[44px] md:h-[52px] py-4 px-14 gap-3 top- [1060px] md: top-[694px] left -[138px] md:left -[940px] rounded-[62px] ">
          <h1 className="text-[14px] md:text-[16px] leading-[18.9px] md:leading-[21.6px] font-medium text-white">
          Add to Cart
          </h1>
          </button>
         </div>
+         </div>
+         </div>
 
-            </div>
-            </div>
+          <div className="w-full h-auto grid gap-3 absolute top-[1154px] px-3 md:px-12 md:top-[926px]">
+           <div className="w- [358px] flex md:justify-around justify-between max-w-[1240px] relative  text-[16px] md:text-[20px] md:leading-[22px]">
+             <h1 className="text-[#00000099] font-normal">
+                Product Details
+             </h1>
+
+             <h1 className="text-[#000000] font-medium">
+                Rating & Reviews
+             </h1>
+
+             <h1 className="text-[#00000099] font-normal" >
+                FAQs
+             </h1>
+           </div>
+
+          <div className=" max-w-[1240px] relative  border border-BORDER">
+          <div className=" w-1/3 mx-auto relative  border-[2px] border-black"></div>
+          </div>
+          
+          <div className=" w-full  relative px- 4 md:px -10 flex items-center justify-between">
+          <div className=" flex items-center" >
+          <h1 className="font-bold  leading-[27px] text-[20px] md:text-[24px] md:leading-[32.4px] text-black">
+          All Reviews
+          </h1>
+
+          <h1 className="font-normal m-2 leading-[22px] text-[14px] md:text-[16px]  text-[#00000099]">
+          (451)
+          </h1>
+          </div>
+          
+          <div className="flex items-center gap-[10px] ">
+              <Image src={Filteration} alt="" className="md:w-12 w-10 h-10 md:h-12" />
+              <button className="w-[236px] md:w-[120px] hidden md:flex items-center justify-center bg-[#f0f0f0] h-[44px] md:h-[48px] py-4 px-4 gap-3 rounded-[62px]">
+                <h1 className="text-[12px] md:text-[16px]  md:leading-[21.6px] font-medium text-black">
+                 Latest
+              </h1>
+              <Image
+                src={Shop}
+                alt="Shop"
+                className="w-[11.5px] h-[6.5px] ml-2"
+                 />
+             </button>
+
+             <button className="w-[113px] md:w-[166px]  bg-black h-[40px] md:h-[48px] flex items-center justify-center py-4 px-4 gap-3 rounded-[62px]">
+               <h1 className="text-[12px]  md:text-[16px] md:leading-[21.6px] leading-4 font-medium text-white">
+                Write a Review
+               </h1>
+              </button>
+
+          </div> 
+          </div>
+
+            <div className="grid absolut relativ mx-auto grid-cols-1 sm:grid-cols-2  gap-6">
+ 
+<ReviewCard
+  rating={4.5}
+  name="Samantha D."
+  review="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+  reviewDate="August 14, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={4.0}
+  name="Alex M."
+  review= "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+  reviewDate="August 15, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={3.5}
+  name="Ethan R."
+  review="This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+  reviewDate="August 16, 2023"
+  isVerified={true}
+/>
+
+
+<ReviewCard
+  rating={4}
+  name="Olivia P."
+  review= "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+  reviewDate="August 17, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={4}
+  name="Liam K."
+  review="This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+  reviewDate="August 18, 2023"
+  isVerified={true}
+
+/>
+
+
+<ReviewCard
+  rating={4.5}
+  name="Ava H."
+  review= "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+  reviewDate="August 19, 2023"
+  isVerified={true}
+/>
+
+
+  </div>
+
+        <div className=" flex items-center  justify-center">
+        <button className="w-[195px] md:w-[230px] absolut flex justify-center items-center border-[#0000001A] border  h-[47px] md:h-[52px] md:py-4 py-[14px] px-9 md:px-14 gap-3 rounded-[62px] ">
+           <h1 className="text-[14px] text-nowrap md:text-[16px]  leading-[18.9px] md:leading-[21.6px] font-medium text-black">
+           Load More Reviews
+           </h1>
+         </button>
+       </div>
+
+      <div className="w-full flex justify-center items-center">
+       <div className=" w-full flex items-center justify-center "> 
+        <h1 className="font-bold md:text-[48px] md:leading-[57.6px] py-9 text-black leading-[36px] text-[32px] ">
+           YOU MIGHT ALSO LIKE
+        </h1>
+       </div>
+      </div>
+
+      <div className=" gap-6 w-full  overflow-x-scroll absolut flex left-4 md:left-14">
+<Pr
+  image={Polo_TShirt}
+  title="Polo with Contrast Trims"
+  rating={4.0}
+  price={242}
+  discount={20}
+  originalPrice={212}
+/>
+
+<Pr
+  image={Multi_shirt}
+  title="Gradient Graphic T-shirt"
+  rating={3.5}
+  price={145}
+/>
+
+<Pr
+  image={Polo_Shirt}
+  title="Polo with Tipping Details"
+  rating={4.5}
+  price={180}
+/>
+
+<Pr
+  image={Black_Striped}
+  title="Black Striped T-shirt"
+  rating={5.0}
+  price={120}
+  discount={30}
+  originalPrice={150}
+/>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div>
+           {/* <div className="grid absolute mx-auto top-[1266px]  left-[16px]  md:left-[56px] grid-cols-1 md:top-[960px] sm:grid-cols-1  md:grid-cols-2  gap-6">
+ 
+<ReviewCard
+  rating={4.5}
+  name="Samantha D."
+  review="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+  reviewDate="August 14, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={4.0}
+  name="Alex M."
+  review= "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+  reviewDate="August 15, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={3.5}
+  name="Ethan R."
+  review="This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+  reviewDate="August 16, 2023"
+  isVerified={true}
+/>
+ <div className="hidden  ">
+
+<ReviewCard
+  rating={4}
+  name="Olivia P."
+  review= "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+  reviewDate="August 17, 2023"
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={4}
+  name="Liam K."
+  review="This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+  reviewDate="August 18, 2023"
+  isVerified={true}
+
+/>
+
+
+<ReviewCard
+  rating={4.5}
+  name="Ava H."
+  review= "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+  reviewDate="August 19, 2023"
+  isVerified={true}
+/>
+</div>
 
             
              {/* <h1 className="font-bold text-[24px] md:w-[550px] md:h-12 w-[267px] h-[56px] absolute pr-10 md:pr-0  leading-[28px] md:text-[40px] md:leading-[48px] md:left-[750px] left-[16px] md:top-[216px] top-[585px] text-black " >
@@ -472,5 +694,10 @@ export default function Cart(){
       <div className="md:top-[2477px] top-[2572px] absolute">
         <Footer />
       </div> */}
+</div>
+     {/* <div className="md:top-[2477px] top-[2572px] absolute">
+        <Footer />
+      </div>  */}
+
      </div>
 }

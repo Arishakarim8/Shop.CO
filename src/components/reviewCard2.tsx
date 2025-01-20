@@ -8,8 +8,8 @@ interface ReviewCardProps {
     rating: number; // Rating out of 5, e.g., 4.5
     name: string; // Name of the reviewer
     review: string; // The review text
-    reviewDate: string; // Date of the review
-    isVerified: boolean; // Whether the reviewer is verified
+    reviewDate?: string; // Date of the review
+    isVerified?: boolean; // Whether the reviewer is verified
   }
 
   const ReviewCard: React.FC<ReviewCardProps> = ({ rating, name, review, reviewDate, isVerified ,  }) => {

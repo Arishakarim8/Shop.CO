@@ -3,79 +3,84 @@ import Image from "next/image"
 import Vector from "@/assets/Vector (5).svg"
 import arrowDown1 from "@/assets/Vector (33).svg"
 import arrowDown2 from "@/assets/Vector (34).svg"
+import ReviewCard from "./reviewCard"
 
 
 export default function Reviews(){
     return (
-        <div>
-           <div className="sm:w-[654px] absolute text-[32px] leading-9 w-[286px] h-[72px] top-[3148px] left-[16px] sm:h-[58px] sm:top-[3363px] sm:left-[100px] font-bold sm:text-[48px] sm:leading-[57.6px] text-black">
+        <div className=" rela tive ">
+         {/* <div className=" fl ex  justify -between h-auto bg-slate-600  top- [3148px] md:to p-[3321px]">
+           <div className=" text-[32px] leading-9 font-bold sm:text-[48px] sm:leading-[57.6px] text-black">
             OUR HAPPY CUSTOMERS
            </div>
-           <div className="top-[3200px] md:top-[3421px] absolute flex gap-4  left-[334px] md:left-[1250px]">
+           <div className=" flex gap-2 ">
              <Image src={arrowDown1} alt="" />
-           {/* </div>
-           <div> */}
              <Image src={arrowDown2} alt="" />
            </div>
+         </div> */}
+         <div className=" flex justify-between w-full gap-10  px-8 py-12">
+          <h1 className="text-[32px] leading-9 font-bold sm:text-[48px] sm:leading-[57.6px] text-black">
+          OUR HAPPY CUSTOMERS
+          </h1>
+          <div className=" flex gap-2 mt-5">
+             <Image src={arrowDown1} alt="" className="bg-white w-8 p-1 rounded-[50%] h-8 border "/>
+             <Image src={arrowDown2} alt="" className="bg-white w-8 p-1 rounded-[50%] h-8 border "/>
+           </div>
 
-           <div className="w-[358px] h-[186.19px] p-7 absolute border-[#0000001A] top-[3244px] left-[16px]  sm:w-[400px] sm:h-[240px] sm:top-[3461px] sm:left-[100px] sm:py-[28px] sm:px-[32px] gap-[342px] rounded-[20px] border-[1px]">
-             <div className="w-[336px] h-[161.58px]  gap-[15px] ">
-                <Image src={STAR} alt="Review" />
-             <div className="w-[336px] h-[124px]  gap-[12px]">
-                <div className="w-[110px] flex items-center mt-2 h-[24px] gap-[4px]">
-                  <h1 className="w-[82px] h-[15px]  font-bold whitespace-nowrap text-[20px] leading-[22px]">
-                  Sarah M.
-                  </h1>
-                  <Image src={Vector} alt="" 
-                  className='ml-1 mt-2  ' />
-                  </div>
-                  <p className="font-normal text-[16px] mt-4  leading-[22px] w-[336px] h-[88px] ">
-                  "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                  </p>
-                </div>
-             </div>
-             </div>
+         </div>
+           <div className="mx-4 md:mx-auto gap-4 scroll-smooth flex overflow-x-scroll ">
 
-             <div className="w-[358px] h-[186.19px] md:absolute hidden md:block border-[#0000001A] top-[3244px] left-[16px] p-[24px] sm:w-[400px] sm:h-[240px] sm:top-[3461px] sm:left-[520px] sm:py-[28px] sm:px-[32px] gap-[342px] rounded-[20px] border-[1px]">
-             <div className="w-[336px] h-[161.58px]  gap-[15px] ">
-                <Image src={STAR} alt="Review" />
-             <div className="w-[336px] h-[124px] gap-[12px]">
-                <div className="w-[110px] h-[24px] mt-2 flex items-center gap-[4px]">
-                  <h1 className="w-[82px h-[15px]  font-bold whitespace-nowrap text-[20px] leading-[22px]">
-                  Alex K.
-                  </h1>
-                  <Image src={Vector} alt="" 
-                  className='ml-1 mt-2  ' />
-                  </div>
-                  <p className="font-normal mt-4 text-[16px]  leading-[22px] w-[336px] h-[88px] ">
-                  "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
-                  </p>
-                </div>
-             </div>
-             </div>
+<ReviewCard
+  rating={5} 
+  Name= "Sarah M."
+  review="I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+  isVerified= {true} 
+  />
+<ReviewCard
+  rating={4.5}
+  Name="Samantha D."
+  review="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={4.0}
+  Name="Alex M."
+  review= "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+  isVerified={true}
+/>
+
+<ReviewCard
+  rating={3.5}
+  Name="Ethan R."
+  review="This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+  isVerified={true}
+/>
 
 
+<ReviewCard
+  rating={4}
+  Name="Olivia P."
+  review= "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+  isVerified={true}
+/>
 
-             <div className="w-[358px] h-[186.19px] md:absolute hidden md:block border-[#0000001A] top-[3244px] left-[16px] p-[24px] sm:w-[400px] sm:h-[240px] sm:top-[3461px] sm:left-[940px] sm:py-[28px] sm:px-[32px] gap-[342px] rounded-[20px] border-[1px]">
-             <div className="w-[336px] h-[161.58px]  gap-[15px] ">
-                <Image src={STAR} alt="Review" />
-             <div className="w-[336px] h-[124px] gap-[12px]">
-                <div className="w-[110px] h-[24px] mt-2 flex items-center gap-[4px]">
-                  <h1 className="w-[82px h-[15px]  font-bold whitespace-nowrap text-[20px] leading-[22px]">
-                  James L.
-                  </h1>
-                  <Image src={Vector} alt="" 
-                  className='ml-1 mt-2 ' />
-                  
-                  </div>
-                  <p className="font-normal mt-4 text-[16px]  leading-[22px] w-[336px] h-[88px] ">
-                  "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”                 
-                   </p>
-                </div>
-             </div>
-             </div>
+<ReviewCard
+  rating={4}
+  Name="Liam K."
+  review="This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+  isVerified={true}
 
-           
+/>
+
+
+<ReviewCard
+  rating={4.5}
+  Name="Ava H."
+  review= "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+  isVerified={true}
+/>
+           </div>
         </div>
     )
 }

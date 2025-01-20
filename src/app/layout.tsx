@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "./Footer/page";
 import Navbar from "@/components/Navbar";
-import BrandName from "@/components/BrandName";
+import BrandName from "@/components/Header";
 // Layout.tsx
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,7 +31,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <Navbar />
         <BrandName />
         {children}
-        
+        {/* <Footer /> */}
       </body>
     </html>
 

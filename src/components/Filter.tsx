@@ -6,10 +6,10 @@ import down_vector from '@/assets/Vector (28).svg'
 import color_vector from "@/assets/Vector (29).svg"
 export default function Filter(){
     return (
-      <div className=" relativ hidden md:flex">
-      <div className="w-[390px] flex flex-col absolute md:w-[295px] py-5 px-6 gap-6 border border-BORDER rounded-[20px] h-[1066px] md:h-[1220px] top-[93px] md:top-[204px] md:left-[56px] ">
+      <div id="Filters" className=" ">
+      <div className="max-w-[390px] flex flex-col absolute md:w -[295px] py-5 px-6 gap-6 border border-BORDER rounded-[20px] h-[1066px] md:h-[1220px] top-[93px] md:top-[204px] md:left-[56px] ">
       <div className="md:w-[247px]  flex justify-between md:h-[27px]  w-[353px] h-[27px] top-5 left-[19px]">
-         <h1 className="font-bold text-[20px] ledaing-[27px] text-black">
+         <h1 className="font-bold text-[20px] leading-[27px] text-black">
          Filters
          </h1>
          <Image src={Filters} alt="" />

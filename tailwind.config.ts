@@ -17,6 +17,9 @@ export default {
         satoshi: ['Satoshi', 'sans-serif'],
         integral: ['Integral CF', 'sans-serif'],
       },
+      screens:{
+        xs : "550px"
+      }
     },
   },
   plugins: [],
