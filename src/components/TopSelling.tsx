@@ -11,14 +11,14 @@ import Link from "next/link"
 import Pr from "@/app/Products/page"
 export default function TopSelling(){
     return(
-        <div className=" flex flex-col gap-10 w-full absolut  top-[1750px] sm:top-[1528px]">
+        <div className=" flex flex-col gap-10 w-full  top-[1750px] sm:top-[1528px]">
         <div className="w-full  flex items-center justify-center w- [231px] h-[38px] leading-[38.4px] text-[32px] sm:h-[58px] left -[80px] top- [1650px] text-black abs olute sm:top -[1728px] sm:left -[546px] font-bold sm:text-[48px] sm:leading-[57.6px]  "> 
            <h1>
            TOP SELLING
            </h1> 
        </div> 
        {/* <div className=" md:mx-14 gap-4 w-full flex overflow-x-scroll md:overflow-auto"> */}
-       <div className="mx-4 lg:mx-auto    gap-4 w -full  h-auto [300px] flex overflow-x-scroll lg:overflow-x-hidden ">
+       <div className="mx-4 lg:mx-auto    gap-4  flex overflow-x-scroll lg:overflow-x-hidden ">
        <Pr
   image={Vertical_Striped}
   title="Vertical Striped Shirt"

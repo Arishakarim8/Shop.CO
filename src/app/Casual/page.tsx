@@ -20,7 +20,7 @@ import Filters from "@/assets/Vector (26).svg"
 import ICON from "@/assets/Icon.svg"
 export default function Casual(){
     return (
-        <div className=" flex flex-col h-full w-full  relative">
+        <div className=" flex flex-col h-full ml-10 mt-10 relative">
              <div className=" flex  abs olute top- [118px] md:top- [158px] left-[16px]  md:left-[56px] gap-[6px] md:gap-3">
              <Link href="/" className="md:text-[16px] text-[14px] leading-[18.9px] gap-1 md:leading-[21.6px] font-normal text-[#00000099]">
              Home
@@ -29,24 +29,26 @@ export default function Casual(){
               <Image src={arrow} alt="" />
              </div>
              <h1 className="text-[14px] leading-[18.9px] md:text-[16px] md:leading-[21.6px] font-normal w-[31px] h-[22px] text-black">
-              Casual
+              Shop
              </h1>
              </div>
+             <div className="md:flex hidden relative mt-10">
              <Filter />
+             </div>
 
             <div className=" flex w-full  justify-between">
-            <div className=" flex flex-col lg:flex-row  max-w-[900px]  lg: justify-between  md:ml-[355px] mt- 16 md:mt-28 relative ">
-             <h1 className=" relative font-bold leading-[32.4px] text-[24px] md:text-[32px] md:leading-[43.2px] text-black">
+            <div className=" flex flex-col lg:flex-row  w-full  justify-between  md:ml-[305px]  relativ ">
+             <h1 className=" relativ font-bold leading-[32.4px] text-[24px] md:text-[32px] md:leading-[43.2px] text-black">
              Casual 
              </h1>
 
-             <div className="  flex flex-col xs:flex-row text-nowrap text-[#00000099] gap-1 relative absolut lg:mt-3 lg:right-6 md:gap-3  ">
+             <div className="  flex flex-col xs:flex-row text-nowrap pr-6 text-[#00000099] gap-1 relative  lg md:mt-2 lg:right -6 md:gap-3  ">
                <h1 className="md:leading-[21.6px] text-nowrap md:text-[16px] font-normal leading-[18.9px] text-[14px]">
                Showing 1-10 of 100 Products
                </h1>
-               <div className=" flex w-[175px] font-normal lg:right-0 leading-[18.9px] text-[14px] md:leading-[21.6px] md:text-[16px]">
+               <div className=" flex gap-1 w-[175px] font-normal lg:right-0 leading-[18.9px] text-[14px] md:leading-[21.6px] md:text-[16px]">
                Sort by: <span className="font-medium text-black"> Most Popular </span>
-               <Image src={Shop} alt="" className='w-[11.5px] md:mt-2 m-[6px] h-[6.5px] top-[5.25px]  '/>
+               <Image src={Shop} alt="" className='w-[11.5px] md:mt-2 m-[6px]  h-[6.5px] top-[5.25px]  '/>
                </div>
              </div>
              </div>
@@ -64,8 +66,8 @@ export default function Casual(){
              </Link>
             </div>
             </div>
- {/* <div className=" flex flex-col lg:flex-row  max-w-[900px]  lg: justify-between  md:ml-[355px] mt- 16 md:mt-28 relative "> */}
-{/* <div className="grid max-w-[950px] bg-yellow-200 md:ml-[365px] relative">
+ <div className=" flex flex-col lg:flex -row lg: justify-between  md:ml-[305px] relative ">
+ {/* <div className="grid max-w-[950px] md:ml-[365px] relative"> */}
              <div className="grid grid-cols-2 xs:grid-cols-3  md:grid-cols-2  lg:grid-cols-3 md:gap-5  ">
                <Pr
   image={Multi_shirt}
@@ -164,7 +166,7 @@ export default function Casual(){
 
   </button>
 </div>
-</div> */}
+</div>
 
 
         </div>

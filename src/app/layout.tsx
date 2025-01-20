@@ -31,7 +31,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <Navbar />
         <BrandName />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
 

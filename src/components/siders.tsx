@@ -21,7 +21,7 @@ const Slider = () => {
       <div className="absolute w-full h-[6px] bg-[#f0f0f0] top-[30px] rounded-[20px]"></div>
       {/* Filled Range */}
       <div
-        className="absolute h-[6px] bg-black rounded-[20px]"
+        className="absolute h-[6px] bg-slate-400 bg- black rounded-[20px]"
         style={{
           left: `${(minValue / 500) * 100}%`,
           right: `${100 - (maxValue / 500) * 100}%`,
@@ -34,7 +34,7 @@ const Slider = () => {
         max="500"
         value={minValue}
         onChange={handleMinChange}
-        className="absolute appearance-none w-full h-[6px] bg-transparent z-10 pointer-events-auto"
+        className="absolute appearance-none w-full bg-slate-400 h-[6px] bg-transparent z-10 pointer-events-auto"
         style={{ top: "18px" }}
       />
       <input
@@ -43,13 +43,13 @@ const Slider = () => {
         max="500"
         value={maxValue}
         onChange={handleMaxChange}
-        className="absolute appearance-none w-full h-[6px] bg-transparent z-10 pointer-events-auto"
+        className="absolute  bg-yellow-200 appearance-none w-full h-[6px] bg-transparent z-10 pointer-events-auto"
         style={{ top: "18px" }}
       />
 
       {/* Thumb Indicators */}
       <div
-        className="w-5 h-5 rounded-[50px] bg-black absolute"
+        className="w-5 h-5 rounded-[50px] bg-purple-300 absolute"
         style={{ left: `${(minValue / 500) * 100}%`, top: "15px" }}
       ></div>
       <div

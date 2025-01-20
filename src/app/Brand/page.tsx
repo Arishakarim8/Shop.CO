@@ -1,15 +1,28 @@
 "use client"
+import { useState } from "react"
 import Filters from "@/assets/Vector (26).svg"
 import Image from "next/image"
-import Link from "next/link"
 import Filter_Vector from "@/assets/Vector (27).svg"
 import down_vector from '@/assets/Vector (28).svg'
 import color_vector from "@/assets/Vector (29).svg"
-import Slider from "@/components/siders"
 export default function Brand(){
+  const [minValue, setMinValue] = useState(50);
+  const [maxValue, setMaxValue] = useState(200);
+
+  const handleMinChange = () => {
+    const value = Math.min(Number(), maxValue - 1);
+    setMinValue(value);
+  };
+
+  const handleMaxChange = (event: { target: { value: any; }; }) => {
+    const value = Math.max(Number(event.target.value), minValue + 1);
+    setMaxValue(value);
+  };
+
+
     return (
       <div id="Filters" className=" ">
-      <div className="max-w-[290px] flex flex-col absolute  py-5 px-6 gap-5 border border-BORDER rounded-[20px]  ">
+      {/* <div className="max-w-[290px] flex flex-col absolute  py-5 px-6 gap-5 border border-BORDER rounded-[20px]  ">
       <div className=" flex justify-between ">
          <h1 className="font-bold text-[20px] ledaing-[27px] text-black">
          Filters
@@ -55,7 +68,6 @@ export default function Brand(){
           </h1>
           <Image src={down_vector} alt=""/>
         </div>
-
          <div className=" relative flex flex-col justify-center items-center ">
           <div className=" h-[6px] w-full  m-2  bg-[#f0f0f0]  rounded-[20px]"></div>
           <div className=" absolute w-[70%]  flex items-center justify-between  h-[6px]  bg-black  rounded-[20px] ">
@@ -192,14 +204,14 @@ export default function Brand(){
         </li>
 
        </ul>
-       
+
        <button className=" bg-black h-12 py-4 px-14 gap-3  rounded-[62px] ">
          <h1 className=" md:text-[14px] leading- md:leading-[18.9px] font-medium text-white">
          Apply Filter
          </h1>
      </button>
 
-     </div>
+     </div> */}
 
   </div>
 )

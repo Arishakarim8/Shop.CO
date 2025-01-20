@@ -7,11 +7,11 @@ import Main_Picture from "@/assets/Rectangle 2.svg"
 import main_picture from "@/assets/Rectangle 2 (2).svg"
 import { Main } from "next/document"
 import Hero_Vector from "@/assets/Vector (32).svg"
-       
+import Link from "next/link"
 
 export default function Hero(){
     return(
- <div className="bg-[#f2f0f1] w-[100%] max-w-[1400px]  flex flex-col md:flex-row justify-between items-start absolut relative mt-6 md :mt-0 h-[953px] top- [98px] md:h-[552] lg:h-[663px] md:top- [134px] overflow-hidden">
+ <div className="bg-[#f2f0f1] w-[100%] max-w-[1400px]  flex flex-col md:flex-row justify-between items-start absolut relative md :mt-0 h-[953px] top- [98px] md:h-[552] lg:h-[663px] md:top- [134px] overflow-hidden">
    <Image 
         src={MAIN_PICTURE} 
         alt="Main image" 
@@ -34,9 +34,9 @@ export default function Hero(){
         </p>
 
         <button className="py-4 px-[54px] gap-3 rounded-[62px]  w-[328px] sm:w-[540px] md:w-[210px] h-[52px] bg-black">
-            <h1 className="font-medium text-white text-[16px] leading-[21.6px]">
+            <Link href="/Casual" className="font-medium text-white text-[16px] leading-[21.6px]">
                 Shop Now
-            </h1>
+            </Link>
         </button>
         </div>
 
