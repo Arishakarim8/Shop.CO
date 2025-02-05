@@ -12,8 +12,7 @@ interface ProductProps {
 import Plus from "@/assets/Vector (24).svg"
 import Delete from "@/assets/Vector (25).svg"
 import { StaticImageData } from "next/image";
-
-  import Image from "next/image";
+import Image from "next/image";
 
 const ProductCard: React.FC<ProductProps> = ({
   img,
