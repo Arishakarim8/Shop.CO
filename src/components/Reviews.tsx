@@ -1,6 +1,4 @@
-import STAR from "@/assets/Frame 10.svg"
 import Image from "next/image"
-import Vector from "@/assets/Vector (5).svg"
 import arrowDown1 from "@/assets/Vector (33).svg"
 import arrowDown2 from "@/assets/Vector (34).svg"
 import ReviewCard from "./reviewCard"
@@ -9,15 +7,6 @@ import ReviewCard from "./reviewCard"
 export default function Reviews(){
     return (
         <div className=" rela tive ">
-         {/* <div className=" fl ex  justify -between h-auto bg-slate-600  top- [3148px] md:to p-[3321px]">
-           <div className=" text-[32px] leading-9 font-bold sm:text-[48px] sm:leading-[57.6px] text-black">
-            OUR HAPPY CUSTOMERS
-           </div>
-           <div className=" flex gap-2 ">
-             <Image src={arrowDown1} alt="" />
-             <Image src={arrowDown2} alt="" />
-           </div>
-         </div> */}
          <div className=" flex justify-between w-full gap-10  px-8 py-12">
           <h1 className="text-[32px] leading-9 font-bold sm:text-[48px] sm:leading-[57.6px] text-black">
           OUR HAPPY CUSTOMERS

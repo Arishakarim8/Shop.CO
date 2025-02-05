@@ -3,9 +3,7 @@ import arrow from "@/assets/Vector (21).svg"
 import arrow_checkOut from "@/assets/Vector (22).svg"
 import promo_code from "@/assets/Vector (23).svg"
 import Multi_shirt from "@/assets/image 8 (1).svg"
-import Plus from "@/assets/Vector (24).svg"
-import Delete from "@/assets/Vector (25).svg"
-import ProductCard from "@/components/CartProducts"
+import ProductCard from "@/app/Cart/CartProducts"
 import Checkered_Shirt from '@/assets/image 9.svg'
 import Skinny_Jeans from '@/assets/Frame 33 (1).svg'
 import Link from "next/link"
@@ -15,9 +13,9 @@ export default function Cart(){
 
     return(
     <Layout>
-    <div className="mb-44">
+    <div className=" relative ml-5 md:ml-20">
 
-        <div className="md:w-[106px] flex md:h-[22px] w-[89px] h-[19px] absolute top-[118px] md:top-[158px] left-[16px] md:left-[56px] gap-[6px] md:gap-3">
+        <div className=" flex gap-[6px] md:gap-3 my-10 ">
              <Link href="/" className="md:text-[16px] text-[14px] leading-[18.9px] gap-1 md:leading-[21.6px] font-normal text-[#00000099]">
              Home
              </Link>
@@ -29,10 +27,10 @@ export default function Cart(){
              </h1>
         </div>
 
-        <div className="md:w-[259px] md:h-12 md:top-[204px] top-[145px] left-4 h-[38px] w-[207px] absolute md:left-[56px] font-black md:text-[40px] md:leading-[48px] text-black text-[32px] leading-[38.4px] "> 
+        <div className="font-black md:text-[40px] my-10 md:leading-[48px] text-black text-[32px] leading-[38.4px] "> 
            YOUR CART
         </div>
-       <div className=" flex  flex-col lg:flex-row  gap -6 relative sm: top-[186px] mx-10 md:top-[246px] justify-center">
+       <div className=" flex  flex-col lg:flex-row  gap -6 relative  sm:mx-10  justify-center">
         <div className="w-full lg:w-[765px] max-w -[978px] flex flex-col justify-between h-auto mx-auto border border-[#0000001A] p-4 md:p-6 gap-6 rounded-[20px] ">
   <ProductCard
     img={Multi_shirt}
@@ -110,10 +108,10 @@ export default function Cart(){
     </li>
   </ul>
 
-  <div className="flex gap-4">
+  <div className="flex  gap-4">
     <div className="flex-1 flex items-center bg-[#F0F0F0] rounded-[62px] px-4 py-3 gap-2">
       <Image src={promo_code} alt="Promo Code" />
-      <span className="text-[14px] md:text-[16px] lg:text-[18px] text-[#00000066] font-normal">
+      <span className="text-[14px] text-nowrap overflow-hidden md:text-[16px] lg:text-[18px] text-[#00000066] font-normal">
         Add promo code
       </span>
     </div>

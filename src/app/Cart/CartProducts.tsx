@@ -29,16 +29,13 @@ const ProductCard: React.FC<ProductProps> = ({
   return (
     
     <div className="w-full max-w-[1200px] mx-auto flex h-auto gap-4 p-4 md:p-6">
-  {/* Product Image */}
   <Image
     src={img}
     alt="Product Image"
     className="w-[99px] h-[99px] md:w-[124px] md:h-[124px] rounded-[8.66px]"
   />
 
-  {/* Product Details */}
   <div className="flex flex-col justify-between flex-1">
-    {/* Product Title and Delete Button */}
     <div className="flex justify-between items-center">
       <h1 className="font-bold text-[16px] md:text-[20px] leading-[21.6px] md:leading-[27px] text-black">
         {title}
@@ -82,14 +79,3 @@ const ProductCard: React.FC<ProductProps> = ({
 
 export default ProductCard;
 
-{/* <ProductCard
-  img={Multi_shirt}
-  title="Gradient Graphic T-shirt"
-  size="Large"
-  color="White"
-  price={145}
-  quantity={1}
-  onDelete={() => console.log("Delete clicked")}
-  onIncrease={() => console.log("Increase quantity")}
-  onDecrease={() => console.log("Decrease quantity")}
-/>  */}

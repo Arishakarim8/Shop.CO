@@ -1,11 +1,5 @@
-import HALF from "@/assets/Frame 57 (2).svg"
-import half from '@/assets/Frame 56 (1).svg'
 import Image from "next/image"
-import full from '@/assets/Frame 57 (1).svg'
 import MAIN_PICTURE from "@/assets/fina.jpeg"
-import Main_Picture from "@/assets/Rectangle 2.svg"
-import main_picture from "@/assets/Rectangle 2 (2).svg"
-import { Main } from "next/document"
 import Hero_Vector from "@/assets/Vector (32).svg"
 import Link from "next/link"
 

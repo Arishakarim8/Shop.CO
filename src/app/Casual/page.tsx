@@ -1,9 +1,9 @@
 "use client"
-
+import Pagination from "@/components/Filter/Pagination"
 import arrow from "@/assets/Vector (21).svg"
 import Image from "next/image"
 import Link from "next/link"
-import Filter from "@/components/Filter"
+import Filter from "@/components/Filter/page"
 import Skinny_Jeans from '@/assets/Frame 33 (1).svg'
 import Pr from "../Products/page"
 import Multi_shirt from "@/assets/Frame 33 (2).svg"
@@ -15,29 +15,29 @@ import Vertical_Striped from "@/assets/Frame 32.svg"
 import Courage_Graphic from "@/assets/Frame 33.svg"
 import LOOSE_SHORTS from "@/assets/Frame 34.svg"
 import Shop from '@/assets/Vector (2).svg'
-import Filters02 from "@/assets/Frame 19.svg"
-import Filters from "@/assets/Vector (26).svg"
-import ICON from "@/assets/Icon.svg"
+import FilterToggle from "@/components/Filter/FilterToggle"
 export default function Casual(){
     return (
-        <div className=" flex flex-col h-full ml-10 mt-10 relative">
-             <div className=" flex  abs olute top- [118px] md:top- [158px] left-[16px]  md:left-[56px] gap-[6px] md:gap-3">
+        <div className=" flex flex-col h-full sm:ml-5 md:ml-14 mt-10  relative">
+             <div className=" flex gap-[6px] md:gap-3">
              <Link href="/" className="md:text-[16px] text-[14px] leading-[18.9px] gap-1 md:leading-[21.6px] font-normal text-[#00000099]">
              Home
              </Link>
              <div className=" w-[11.5px] md:mt-[5px] mt-[3px]  h-[6.5px] top-[13.75px] left-[5.25px]">
               <Image src={arrow} alt="" />
              </div>
-             <h1 className="text-[14px] leading-[18.9px] md:text-[16px] md:leading-[21.6px] font-normal w-[31px] h-[22px] text-black">
+             <Link href="/Casual" className="md:text-[16px] text-[14px] leading-[18.9px] gap-1 md:leading-[21.6px] font-normal text-[#00000099]">
               Shop
-             </h1>
+              </Link>
+
              </div>
-             <div className="md:flex hidden relative mt-10">
+             <div className="md:flex hidden  mt-10">
              <Filter />
              </div>
+<div className=" relative md:ml-[295px] ">
 
             <div className=" flex w-full  justify-between">
-            <div className=" flex flex-col lg:flex-row  w-full  justify-between  md:ml-[305px]  relativ ">
+            <div className=" flex flex-col lg:flex-row  w-full  justify-between  ">
              <h1 className=" relativ font-bold leading-[32.4px] text-[24px] md:text-[32px] md:leading-[43.2px] text-black">
              Casual 
              </h1>
@@ -53,28 +53,19 @@ export default function Casual(){
              </div>
              </div>
 
-             <div>
-             < Link href="#Filters">       
-             <Image 
-                     src={Filters02} 
-                     alt="Filters" 
-                    //  onClick={() => {
-                    //   window.location.href = "/"; 
-                    // }}
-                     className=" w-8 h-8 top- [149px] mb-2 rounded-[62px] relative abs olute right -6 flex md:hidden "
-                 />
-             </Link>
+             <div className="flex md:hidden">
+              <FilterToggle/>
             </div>
             </div>
- <div className=" flex flex-col lg:flex -row lg: justify-between  md:ml-[305px] relative ">
- {/* <div className="grid max-w-[950px] md:ml-[365px] relative"> */}
-             <div className="grid grid-cols-2 xs:grid-cols-3  md:grid-cols-2  lg:grid-cols-3 md:gap-5  ">
+ <div className=" flex flex-col justify-between  ">
+             <div className="grid grid-cols-2 xs:grid-cols-3   md:grid-cols-2  lg:grid-cols-3 md:gap-5  ">
                <Pr
   image={Multi_shirt}
   title="Gradient Graphic T-shirt"
   rating={3.5}
   price={145}
 />
+
 <Pr
   image={Polo_Shirt}
   title="Polo with Tipping Details"
@@ -98,7 +89,6 @@ export default function Casual(){
   discount={20}
   originalPrice={260}
 />
-<div className="md:h-[420px] h-[280px]">
 
 <Pr
   image={Checkered_Shirt}
@@ -106,7 +96,6 @@ export default function Casual(){
   rating={4.5}
   price={180}
 />
-</div>
 <Pr
   image={Sleeve_Striped}
   title="Sleeve Striped T-shirt"
@@ -116,7 +105,6 @@ export default function Casual(){
   originalPrice={160}
 />
 
-<div className="md:h-[420px] h-[280px] ">
 
 <Pr
   image={Vertical_Striped}
@@ -126,7 +114,6 @@ export default function Casual(){
   discount={20}
   originalPrice={232}
 />
-</div>
 
 <Pr
   image={Courage_Graphic}
@@ -142,32 +129,10 @@ export default function Casual(){
 />
 </div>
 
-<div className=' m-7   border-[1px] border-solid border-[#0000001A] '></div>
-
-<div className="flex items-center justify-between  font-medium leading-5 text-[12px] md:text-[14px]    w-full  md:w-4/6  px-4 py-2 mx-auto ">
-  <button className="flex items-center gap-2 px-4 py-2  text-gray-600 border rounded-lg hover:bg-gray-100">
-     <Image src={ICON} alt="" />
-    Previous
-  </button>
-
-  <div className="flex items-center gap-2">
-    <button className="w-8 h-8 text-black bg-[#0000000F] rounded-lg">1</button>
-    <button className="w-8 h-8 text-gray-800 border rounded-lg hover:bg-gray-100">2</button>
-    <button className="w-8 h-8 text-gray-800 border rounded-lg hidden lg:block hover:bg-gray-100">3</button>
-    <span className="text-gray-500">...</span>
-    <button className="w-8 h-8 text-gray-800 border rounded-lg hidden lg:block hover:bg-gray-100">8</button>
-    <button className="w-8 h-8 text-gray-800 border rounded-lg hover:bg-gray-100">9</button>
-    <button className="w-8 h-8 text-gray-800 border rounded-lg hover:bg-gray-100">10</button>
-  </div>
-
-  <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 border rounded-lg hover:bg-gray-100">
-    Next
-    <Image src={ICON} alt="" className="rotate-180"/>
-
-  </button>
+<div className=' my-7   border-[1px] border-solid border-[#0000001A] '></div>
+<Pagination/>
 </div>
 </div>
-
 
         </div>
     )
