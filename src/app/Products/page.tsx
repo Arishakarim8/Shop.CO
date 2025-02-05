@@ -7,6 +7,7 @@ interface ProductDiscountCardProps {
     originalPrice?: number;  // Original product price before discount (e.g., 260)
     discount?: number;       // Discount percentage (e.g., 20)
   }
+import React from 'react';
 import Image from "next/image";
 import STAR from '@/assets/Star 5.svg'
 import Star from '@/assets/Star 3.svg'
