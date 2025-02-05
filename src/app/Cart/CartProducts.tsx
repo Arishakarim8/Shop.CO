@@ -1,5 +1,5 @@
 interface ProductProps {
-    img: StaticImageData; // Path to the product image
+    img: StaticImageData | string; // Path to the product image
     title: string; // Product title
     size: string; // Product size
     color: string; // Product color

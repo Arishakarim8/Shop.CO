@@ -1,5 +1,5 @@
 interface ProductDiscountCardProps {
-    image: StaticImageData; // Path to the product image
+    image: StaticImageData | string; // Path to the product image
     title: string;          // Product title
     rating: number;         // Product rating (e.g., 3.5)
     price?: number;          // Current product price (e.g., 240)
