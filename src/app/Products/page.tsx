@@ -1,16 +1,7 @@
-interface ProductDiscountCardProps {
-    image: StaticImageData | string; // Path to the product image
-    title: string;          // Product title
-    rating: number;         // Product rating (e.g., 3.5)
-    price?: number;          // Current product price (e.g., 240)
-    originalPrice?: number;  // Original product price before discount (e.g., 260)
-    discount?: number;       // Discount percentage (e.g., 20)
-  }
 import Image from "next/image";
 import STAR from '@/assets/Star 5.svg'
 import Star from '@/assets/Star 3.svg'
-import { StaticImageData } from "next/image";
-
+import { ProductDiscountCardProps } from "./type";
 const Pr: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, originalPrice, discount }) => {
   return (
      

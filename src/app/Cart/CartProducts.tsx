@@ -1,18 +1,7 @@
-interface ProductProps {
-    img: StaticImageData | string; // Path to the product image
-    title: string; // Product title
-    size: string; // Product size
-    color: string; // Product color
-    price: number; // Product price
-    quantity: number; // Product quantity
-    onDelete?: () => void; // Function to handle deletion
-    onIncrease?: () => void; // Function to increase quantity
-    onDecrease?: () => void; // Function to decrease quantity
-  }
 import Plus from "@/assets/Vector (24).svg"
 import Delete from "@/assets/Vector (25).svg"
-import { StaticImageData } from "next/image";
 import Image from "next/image";
+ import { ProductProps } from "./type";
 
 const ProductCard: React.FC<ProductProps> = ({
   img,
