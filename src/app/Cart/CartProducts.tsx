@@ -1,7 +1,7 @@
 import Plus from "@/assets/Vector (24).svg"
 import Delete from "@/assets/Vector (25).svg"
 import Image from "next/image";
- import { ProductProps } from "./type";
+ import  ProductProps  from "./type";
 
 const ProductCard: React.FC<ProductProps> = ({
   img,
@@ -10,9 +10,9 @@ const ProductCard: React.FC<ProductProps> = ({
   color,
   price,
   quantity,
-  onDelete,
-  onIncrease,
-  onDecrease,
+  // onDelete,
+  // onIncrease,
+  // onDecrease,
 }) => {
   return (
     
@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductProps> = ({
       <h1 className="font-bold text-[16px] md:text-[20px] leading-[21.6px] md:leading-[27px] text-black">
         {title}
       </h1>
-      <button onClick={onDelete}>
+      <button>
         <Image src={Delete} alt="Delete" />
       </button>
     </div>
@@ -50,11 +50,10 @@ const ProductCard: React.FC<ProductProps> = ({
       </h1>
       <div className="flex items-center bg-[#F0F0F0] h-[31px] md:h-[44px] py-[6px] px-4 gap-4 rounded-[62px]">
         <button
-          onClick={onDecrease}
           className="w-[15.63px] h-[1.88px] bg-black"
         ></button>
         <h1 className="font-medium text-[14px] leading-[18.9px]">{quantity}</h1>
-        <button onClick={onIncrease}>
+        <button>
           <Image src={Plus} alt="Increase" />
         </button>
       </div>
