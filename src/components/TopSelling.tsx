@@ -8,7 +8,7 @@ import Formal from '@/assets/image 13.svg'
 import Party from '@/assets/image 12.svg'
 import Gym from "@/assets/image 14 (1).svg"
 import Link from "next/link"
-import Pr from "@/app/Products/page"
+import Product from "@/app/Products/page"
 export default function TopSelling(){
     return(
         <div className=" flex flex-col gap-10 w-full  top-[1750px] sm:top-[1528px]">
@@ -18,7 +18,7 @@ export default function TopSelling(){
            </h1> 
        </div> 
        <div className="mx-4 lg:mx-auto    gap-4  flex overflow-x-scroll lg:overflow-x-hidden ">
-       <Pr
+       <Product
   image={Vertical_Striped}
   title="Vertical Striped Shirt"
   rating={5.0}
@@ -27,19 +27,19 @@ export default function TopSelling(){
   originalPrice={232}
 />
 
-<Pr
+<Product
   image={Courage_Graphic}
   title="Courage Graphic T-Shirt"
   rating={4.0}
   price={145}
 />
-<Pr
+<Product
   image={LOOSE_SHORTS}
   title="Loose Fit Bermuda Shorts"
   rating={3.0}
   price={180}
 />
-<Pr
+<Product
   image={Faded_Jeans}
   title="Faded Skinny Jeans"
   rating={4.5}

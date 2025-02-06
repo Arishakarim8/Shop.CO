@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export default interface ProductDiscountCardProps {
+export  interface ProductDiscountCardProps {
   image: StaticImageData | string;
   title: string;
   rating: number;

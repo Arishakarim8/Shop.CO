@@ -10,11 +10,11 @@ import Plus from "@/assets/Vector (24).svg"
 import Filteration from "@/assets/Frame 19.svg"
 import Shop from '@/assets/Vector (2).svg'
 import ReviewCard from "@/components/reviewCard2"
-import Pr from "../Products/page"
 import Multi_shirt from "@/assets/Frame 33 (2).svg"
 import Polo_Shirt from "@/assets/Frame 34 (1).svg"
 import Black_Striped from "@/assets/Frame 38 (1).svg"
 import Polo_TShirt from "@/assets/Frame 32 (1).svg"
+import Product from "../Products/page"
 export default function Cart(){
 
     return <div className=" flex flex-col gap-10 md:gap-14">
@@ -270,7 +270,7 @@ export default function Cart(){
       </div>
 
       <div className=" gap-6 w-full  overflow-x-scroll absolut flex left-4 md:left-14">
-<Pr
+<Product
   image={Polo_TShirt}
   title="Polo with Contrast Trims"
   rating={4.0}
@@ -279,21 +279,21 @@ export default function Cart(){
   originalPrice={212}
 />
 
-<Pr
+<Product
   image={Multi_shirt}
   title="Gradient Graphic T-shirt"
   rating={3.5}
   price={145}
 />
 
-<Pr
+<Product
   image={Polo_Shirt}
   title="Polo with Tipping Details"
   rating={4.5}
   price={180}
 />
 
-<Pr
+<Product
   image={Black_Striped}
   title="Black Striped T-shirt"
   rating={5.0}

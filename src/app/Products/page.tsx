@@ -1,8 +1,10 @@
 import Image from "next/image";
 import STAR from '@/assets/Star 5.svg'
 import Star from '@/assets/Star 3.svg'
-import  ProductDiscountCardProps  from "./type";
-const Pr: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, originalPrice, discount }) => {
+// import  ProductDiscountCardProps  from "./type";
+import type { ProductDiscountCardProps } from "./type";
+
+const Product: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, originalPrice, discount }) => {
   return (
      
       <div className=' w-[20vh] lg:w-[22vw] lg:gap-5 lg:h-[22vw] gap-20  aspect-square h-[20vh] sm:w-[30vw] mb-28  sm:h-[30vw]  lg: mr- 5 rounded-[13.42px] md:w -[30vw] md:h -[30vw] lg:w -[22vw] lg:h -[22vw] absolut md:rounded-[20px]  bg-[#F0EEED]'>
@@ -44,5 +46,5 @@ const Pr: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, o
     );
   };
   
-export default Pr
+export default Product;
   

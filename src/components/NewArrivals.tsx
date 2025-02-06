@@ -5,7 +5,7 @@ import Gucci from '@/assets/gucci-logo-1 1.svg'
 import Zara from '@/assets/Vector (3).svg'
 import Image from 'next/image'
 import TShirt_tape from '@/assets/Frame 32 (2).svg'
-import Pr from '@/app/Products/page'
+import Product from '@/app/Products/page'
 import Sleeve_Striped from '@/assets/Frame 114.svg'
 import Skinny_Jeans from '@/assets/Frame 33 (1).svg'
 import Checkered_Shirt from '@/assets/Frame 113.svg'
@@ -27,14 +27,14 @@ export default function NewArrivals (){
             </div> 
 <div className="mx-4 lg:mx-auto gap-4  flex overflow-x-scroll lg:overflow-x-hidden ">
 
-            <Pr
+            <Product
   image={TShirt_tape}
   title="T-Shirt With Tape Details"
   rating={4.5}
   price={120}
 />
 
-            <Pr
+            <Product
   image={Skinny_Jeans}
   title="Skinny Fit Jeans"
   rating={3.5}
@@ -42,14 +42,14 @@ export default function NewArrivals (){
   discount={20}
   originalPrice={260}
 />
-<Pr
+<Product
   image={Checkered_Shirt}
   title="Checkered Shirt"
   rating={4.5}
   price={180}
 />
 
-<Pr
+<Product
   image={Sleeve_Striped}
   title="Sleeve Striped T-shirt"
   rating={4.5}

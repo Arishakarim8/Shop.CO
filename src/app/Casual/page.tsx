@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Filter from "@/components/Filter/page"
 import Skinny_Jeans from '@/assets/Frame 33 (1).svg'
-import Pr from "../Products/page"
+import Product from "../Products/page"
 import Multi_shirt from "@/assets/Frame 33 (2).svg"
 import Polo_Shirt from "@/assets/Frame 34 (1).svg"
 import Black_Striped from "@/assets/Frame 38 (1).svg"
@@ -59,21 +59,21 @@ export default function Casual(){
             </div>
  <div className=" flex flex-col justify-between  ">
              <div className="grid grid-cols-2 xs:grid-cols-3   md:grid-cols-2  lg:grid-cols-3 md:gap-5  ">
-               <Pr
+               <Product
   image={Multi_shirt}
   title="Gradient Graphic T-shirt"
   rating={3.5}
   price={145}
 />
 
-<Pr
+<Product
   image={Polo_Shirt}
   title="Polo with Tipping Details"
   rating={4.5}
   price={180}
 />
 
-<Pr
+<Product
   image={Black_Striped}
   title="Black Striped T-shirt"
   rating={5.0}
@@ -81,7 +81,7 @@ export default function Casual(){
   discount={30}
   originalPrice={150}
 />
-<Pr
+<Product
   image={Skinny_Jeans}
   title="Skinny Fit Jeans"
   rating={3.5}
@@ -90,13 +90,13 @@ export default function Casual(){
   originalPrice={260}
 />
 
-<Pr
+<Product
   image={Checkered_Shirt}
   title="Checkered Shirt"
   rating={4.5}
   price={180}
 />
-<Pr
+<Product
   image={Sleeve_Striped}
   title="Sleeve Striped T-shirt"
   rating={4.5}
@@ -106,7 +106,7 @@ export default function Casual(){
 />
 
 
-<Pr
+<Product
   image={Vertical_Striped}
   title="Vertical Striped Shirt"
   rating={5.0}
@@ -115,13 +115,13 @@ export default function Casual(){
   originalPrice={232}
 />
 
-<Pr
+<Product
   image={Courage_Graphic}
   title="Courage Graphic T-Shirt"
   rating={4.0}
   price={145}
 />
-<Pr
+<Product
   image={LOOSE_SHORTS}
   title="Loose Fit Bermuda Shorts"
   rating={3.0}
