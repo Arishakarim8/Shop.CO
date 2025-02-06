@@ -14,7 +14,7 @@ import Multi_shirt from "@/assets/Frame 33 (2).svg"
 import Polo_Shirt from "@/assets/Frame 34 (1).svg"
 import Black_Striped from "@/assets/Frame 38 (1).svg"
 import Polo_TShirt from "@/assets/Frame 32 (1).svg"
-import Product from "../Products/page"
+import Product from "../../components/Products/card"
 export default function Cart(){
 
     return <div className=" flex flex-col gap-10 md:gap-14">

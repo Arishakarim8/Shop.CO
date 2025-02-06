@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Filter from "@/components/Filter/page"
 import Skinny_Jeans from '@/assets/Frame 33 (1).svg'
-import Product from "../Products/page"
+import Product from "../../components/Products/card"
 import Multi_shirt from "@/assets/Frame 33 (2).svg"
 import Polo_Shirt from "@/assets/Frame 34 (1).svg"
 import Black_Striped from "@/assets/Frame 38 (1).svg"

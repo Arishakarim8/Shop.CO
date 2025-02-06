@@ -8,7 +8,7 @@ import Formal from '@/assets/image 13.svg'
 import Party from '@/assets/image 12.svg'
 import Gym from "@/assets/image 14 (1).svg"
 import Link from "next/link"
-import Product from "@/app/Products/page"
+import Product from "@/components/Products/card"
 export default function TopSelling(){
     return(
         <div className=" flex flex-col gap-10 w-full  top-[1750px] sm:top-[1528px]">

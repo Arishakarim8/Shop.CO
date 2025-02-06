@@ -1,7 +1,6 @@
 import Image from "next/image";
 import STAR from '@/assets/Star 5.svg'
 import Star from '@/assets/Star 3.svg'
-// import  ProductDiscountCardProps  from "./type";
 import type { ProductDiscountCardProps } from "./type";
 
 const Product: React.FC<ProductDiscountCardProps> = ({ image, title, rating, price, originalPrice, discount }) => {
